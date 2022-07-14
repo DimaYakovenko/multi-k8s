@@ -1,6 +1,6 @@
-docker build -t dyakodocker/multi-client:latest -t dyakodocker/multi-client:$SHA -f ./client/Dockerfile ./multi-client
-docker build -t dyakodocker/multi-server:latest -t dyakodocker/multi-server:$SHA -f ./server/Dockerfile ./multi-server
-docker build -t dyakodocker/multi-worker:latest -t dyakodocker/multi-worker:$SHA -f ./worker/Dockerfile ./multi-worker
+docker build -t dyakodocker/multi-client:latest -t dyakodocker/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t dyakodocker/multi-server:latest -t dyakodocker/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t dyakodocker/multi-worker:latest -t dyakodocker/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push dyakodocker/multi-client:latest
 docker push dyakodocker/multi-server:latest
